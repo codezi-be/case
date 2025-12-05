@@ -71,8 +71,10 @@ body p{
     max-height: 100%;
 }
 .openingsuren-paragraaf{
-    text-align: center;
     font-weight:bold;
+}
+.openingsuren-paragraaf p{
+    font-size: 25px;
 }
 
 
