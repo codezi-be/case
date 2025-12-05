@@ -9,15 +9,23 @@ body {
     width: 1300px;
     margin: auto;
 }
+/* header */
 .header{
+    width: 1300px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 30px;
+    padding: 25px 40px;
 
     position: sticky;
     top: 0;
     z-index: 999;
+    background-color: whitesmoke;
+
+}
+.header-logo{
+    font-size: 50px;
 }
 .header-logo{
     margin: 0;
@@ -29,6 +37,11 @@ body {
 .navigatie a{
     text-decoration: none;
 }
+
+/* footer */
+
+
+
 
 /* css voor de paralax */
 
