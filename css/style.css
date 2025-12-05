@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Nata+Sans:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     margin: 0;
+
 }
 
 .container {
-    width: 1300px;  
+    width: 1300px;
 }
 .header{
     max-width: 1300px;
