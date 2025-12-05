@@ -1,7 +1,20 @@
 body {
     margin: 0;
+
 }
 
 .container {
     width: 1300px;
+}
+
+/* css voor de paralax */
+
+.paralax {
+    background-image: url(img/background_paralax.jpg);
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
