@@ -30,10 +30,6 @@ h1 {
     justify-content: space-between;
     align-items: center;
     padding: 25px 40px;
-
-    
-
-
 }
 .header-logo{
     font-size: 50px;
@@ -127,6 +123,14 @@ h1 {
     padding: 10px 50px 10px 50px;
     border-radius: 15px;
     margin-right: 10px;
+    box-shadow: 2px 2px 10px;
+}
+
+
+.btn_reserveer:hover {
+     background-color: transparent;
+    border: #A89574 solid 2px;
+    color: whitesmoke;
 }
 
 .btn_prijs {
@@ -137,3 +141,10 @@ h1 {
     border-radius: 15px;
     margin-left: 10px;
 }
+
+.btn_prijs:hover {
+    background-color: #A89574;
+    border: none;
+    box-shadow: 2px 2px 10px;
+}
+
