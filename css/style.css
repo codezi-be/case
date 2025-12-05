@@ -19,6 +19,11 @@ h1 {
 }
 
 /* header */
+.header-achtergrond{
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+}
 .header{
     margin: auto;
     display: flex;
@@ -26,9 +31,8 @@ h1 {
     align-items: center;
     padding: 25px 40px;
 
-    position: sticky;
-    top: 0;
-    background-color: whitesmoke;
+    
+
 
 }
 .header-logo{
@@ -58,7 +62,7 @@ h1 {
     align-items: center;
     padding: 25px 40px;
     top: 0;
-    background-color: whitesmoke;
+
 }
 .footer-logo{
     font-size: 50px;
