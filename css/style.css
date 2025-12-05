@@ -4,6 +4,9 @@ body {
     margin: 0;
 
 }
+body p{
+    font-size: 16px;
+}
 
 .container {
     width: 1300px;
@@ -20,12 +23,13 @@ body {
 
     position: sticky;
     top: 0;
-    z-index: 999;
     background-color: whitesmoke;
 
 }
 .header-logo{
     font-size: 50px;
+    text-decoration: none;
+    color: black;
 }
 .header-logo{
     margin: 0;
@@ -36,11 +40,40 @@ body {
 }
 .navigatie a{
     text-decoration: none;
+    color: black;
 }
 
 /* footer */
 
+.footer{
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    top: 0;
+    background-color: whitesmoke;
+}
+.footer-logo{
+    font-size: 50px;
+    text-decoration: none;
+    color:black ;
+}
+.footer-afbeeldingen img{
+    padding-right: 20px;
+    height: 75px;
+    width: 75px;
 
+}
+.footer-openingsuren{
+
+    max-height: 100%;
+}
+.openingsuren-paragraaf{
+    text-align: center;
+    font-weight:bold;
+}
 
 
 /* css voor de paralax */
