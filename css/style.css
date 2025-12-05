@@ -7,6 +7,7 @@ body {
 
 .container {
     width: 1300px;
+    margin: auto;
 }
 .header{
     display: flex;
@@ -27,4 +28,18 @@ body {
 }
 .navigatie a{
     text-decoration: none;
+}
+
+/* css voor de paralax */
+
+.paralax {
+    background-image: url(../img/background_paralax.jpg);
+    min-height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
 }
