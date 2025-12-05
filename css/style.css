@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Nata+Sans:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     margin: 0;
 
@@ -5,16 +7,20 @@ body {
 
 .container {
     width: 1300px;
+    margin: auto;
 }
+
 
 /* css voor de paralax */
 
 .paralax {
-    background-image: url(img/background_paralax.jpg);
-    min-height: 500px;
+    background-image: url(../img/background_paralax.jpg);
+    min-height: 100vh;
 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+
 }
