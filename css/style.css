@@ -3,19 +3,36 @@
 body {
     margin: 0;
 }
-body p{
-    font-size: 16px;
-}
 
 .container {
     width: 1300px;
     margin: auto;
 }
 
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 h1 {
     font-family: "Chewy", system-ui;
     font-size: 40px;
     color: #770000;
+}
+
+h2 {
+    font-family: "Nata Sans", sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: "Nata Sans", sans-serif;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
 }
 
 /* header */
@@ -58,7 +75,6 @@ h1 {
     align-items: center;
     padding: 25px 40px;
     top: 0;
-
 }
 .footer-logo{
     font-size: 50px;
@@ -121,8 +137,8 @@ h1 {
 .hero {
     display: flex;
     align-items: center;
-    padding-top: 200px;
     justify-content: space-between;
+    padding-top: 10vh;
 }
 
 .hero_tekst {
@@ -169,3 +185,54 @@ h1 {
     box-shadow: 2px 2px 10px;
 }
 
+/* css homepagina cards */
+
+.card {
+    width: 300px;
+    height: 450px;
+    background-color: #A89574;
+    border-radius: 20px;
+    margin-top: 200px;
+    box-shadow: 2px 2px 10px;
+}
+
+.card>h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card>p {
+    width: 250px;
+    margin: 40px auto;
+}
+
+/* css homepagina kaart belgie sectie */
+
+.belgie {
+    margin-top: 200px;
+    align-items: center;
+}
+
+.tekst_kaart {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 150px;
+}
+
+/* homepagina sfeerfotos */
+
+.galerij {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.galerij>img {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px;
+}
+
+.galerij>img:hover {
+    transform: scale(1.2);
+}
