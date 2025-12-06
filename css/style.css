@@ -87,6 +87,22 @@ h1 {
     text-align: center;
 }
 
+/* contacten pagina */
+
+.info_over{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+.opmerking{
+    text-align: center;
+    padding: 50px 0;
+}
+.formulier{
+    display: flex;
+}
+
+
 
 /* css voor de paralax */
 
