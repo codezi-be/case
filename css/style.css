@@ -114,10 +114,39 @@ p {
     text-align: center;
     padding: 50px 0;
 }
-.formulier{
+/* formulier */
+iframe{
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px;
+}
+.div-links input{
     display: flex;
 }
-
+.text-met-map{
+    margin-bottom: 20px;
+}
+.form-email{
+    margin-top: 20px;
+}
+textarea{
+    height: 250px;
+    width: 400px;
+}
+.form-bericht{
+    width: 100%;
+    min-height: 200px;
+} 
+.form-buton{
+    font-size: 16;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #A89574;
+}
+.form-buton:hover {
+    box-shadow: 2px 2px 10px;
+    cursor: pointer;
+}
 
 
 /* css voor de paralax */

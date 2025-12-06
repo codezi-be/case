@@ -7,6 +7,7 @@
     <meta name="author" content="ziggy, ahmet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="javascript/script-contact.js"></script>
     <title>homepagina</title>
 </head>
 <body>
@@ -68,38 +69,42 @@
             </div>
         </div>
         <!-- form -->
-        <div class="formulier">
-            <form action="">
-                <div class="form-naam">
-                    <label for="voornaam">voornaam:</label>
-                    <input type="text" id="voornaam">
-                </div>
-                <div class="form-email">
-                    <label for="email">email:</label>
-                    <input type="email" id="email" value="janpiet@outlook.com">
-                </div>
+        <div class="formulier container flex">
+            <div>
+                <form action="">
+                    <div class="text-met-map">
+                        <div class="div-links">
+                            <div class="form-naam">
+                                <label for="voornaam">voornaam:</label>
+                                <input type="text" id="voornaam" name="voornaam">
+                            </div>
+                            <div class="form-email">
+                                <label for="email">email:</label>
+                                <input type="email" id="email"  name="email">
+                            </div>
+                        </div>
+                        
+                    </div>
 
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.849824103534!2d5.492406300000001!3d50.981966400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0d8de243ff131%3A0xc2a6229d08f5ba6a!2sWok%20Plaza!5e0!3m2!1snl!2sbe!4v1765012983283!5m2!1snl!2sbe"
-                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" title="locatie van wok plaza">
-                    </iframe>
-                </div>
 
-                <div class="form-bericht">
-                    <label for="bericht">bericht:</label>
-                    <textarea placeholder="schrijf je commentaar" name="bericht"></textarea>
-                </div>
-                <p>Wij gebruiken uw gegevens alleen maar voor het beantwoorden van uw vraag.</p>
+                    <div class="form-bericht">
+                        <label for="bericht">bericht:</label><br>
+                        <textarea placeholder="schrijf je commentaar" name="bericht"></textarea>
+                    </div>
+                    <p>Wij gebruiken uw gegevens alleen maar voor het beantwoorden van uw vraag.</p>
 
-                <button type="submit">verzenden</button>
-
-            </form>
-            
-        </div>
-
+                    <button class="form-buton" type="submit">verzenden</button>
                 
+                </form>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.849824103534!2d5.492406300000001!3d50.981966400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0d8de243ff131%3A0xc2a6229d08f5ba6a!2sWok%20Plaza!5e0!3m2!1snl!2sbe!4v1765012983283!5m2!1snl!2sbe"
+                    width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="locatie van wok plaza">
+                </iframe>
+            </div>
+        </div>         
     </div>
 
 
