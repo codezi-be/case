@@ -147,7 +147,11 @@ textarea{
     box-shadow: 2px 2px 10px;
     cursor: pointer;
 }
+/* formulier validatie */
 
+.error{
+    color: red;
+}
 
 /* css voor de paralax */
 

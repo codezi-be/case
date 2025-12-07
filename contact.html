@@ -71,16 +71,19 @@
         <!-- form -->
         <div class="formulier container flex">
             <div>
-                <form action="">
+                <form action="" id="formulier">
                     <div class="text-met-map">
                         <div class="div-links">
                             <div class="form-naam">
                                 <label for="voornaam">voornaam:</label>
                                 <input type="text" id="voornaam" name="voornaam">
+                                <span class="error" id="voornaam_error"></span>
                             </div>
                             <div class="form-email">
                                 <label for="email">email:</label>
                                 <input type="email" id="email"  name="email">
+                                <span class="error" id="email_error"></span>
+
                             </div>
                         </div>
                         
@@ -93,7 +96,7 @@
                     </div>
                     <p>Wij gebruiken uw gegevens alleen maar voor het beantwoorden van uw vraag.</p>
 
-                    <button class="form-buton" type="submit">verzenden</button>
+                    <button class="form-buton" type="submit" value="verstuur" id="knop_verstuur" onclick="verstuur()">verzend</button>
                 
                 </form>
             </div>
