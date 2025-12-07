@@ -27,52 +27,86 @@
 
     <div class="form container">
         <form method="post">
-            <label for="achternaam">Achternaam</label>
-            <input type="text" name="achternaam"  id="achternaam">
 
-             <label for="voornaam">Voornaam</label>
-            <input type="text" name="voornaam" id="voornaam">
+            <div class="formFlex">
+                <label for="achternaam">Achternaam</label>
+                <input type="text" name="achternaam"  id="achternaam">
 
-            <label for="telefoon">Telefoon</label>
-            <input type="text" name="telefoon" id="telefoon">
+                <label for="voornaam">Voornaam</label>
+                <input type="text" name="voornaam" id="voornaam">
+            </div>    
 
-             <label for="email">Email</label>
-            <input type="text" name="email" id="email">
+            <div>
+                <label for="telefoon">Telefoon</label>
+                <input type="text" name="telefoon" id="telefoon">
 
-            <label for="datum">Datum waneer u komt</label>
-            <input type="text" name="datum" id="datum">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </div>
 
-            <label for="aantal">Aantal personen</label>
-            <select name="aantal" id="aantal">
-                <option value="">Maak uw keuze</option>
-                <option value="1prs">1 Persoon</option>
-                <option value="2prs">2 Personen</option>
-                <option value="3prs">3 Personen</option>
-                <option value="4prs">4 Persoon</option>
-                <option value="5prs">5 Personen</option>
-                <option value="6prs">6 Personen</option>
-                <option value="7prs">7 Persoon</option>
-                <option value="8prs">8 Personen</option>
-                <option value="9prs">9 Personen</option>
-                <option value="10prs">10 Personen</option>
-            </select>
+            <div>
+                <label for="datum">Datum waneer u komt</label>
+                <input type="text" name="datum" id="datum">
 
-            <label for="tijdslot">Uur van aankomst</label>
-            <select name="tijden" id="tijden">
-                <option value="">Kies u uur</option>
-                <option value="16:00">16:00</option>
-                <option value="16:30">16:30</option>
-                <option value="17:00">17:00</option>
-                <option value="17:30">17:30</option>
-                <option value="18:00">18:00</option>
-                <option value="18:30">18:30</option>
-                <option value="19:00">19:00</option>
-                <option value="19:30">19:30</option>
-                <option value="20:00">20:00</option>
-                <option value="20:30">20:30</option>
-                <option value="21:00">21:00</option>
-                <option value="21:30">21:30</option>
-            </select>
+                <label for="aantal">Aantal personen</label>
+                <select name="aantal" id="aantal">
+                    <option value="">Maak uw keuze</option>
+                    <option value="1prs">1 Persoon</option>
+                    <option value="2prs">2 Personen</option>
+                    <option value="3prs">3 Personen</option>
+                    <option value="4prs">4 Persoon</option>
+                    <option value="5prs">5 Personen</option>
+                    <option value="6prs">6 Personen</option>
+                    <option value="7prs">7 Persoon</option>
+                    <option value="8prs">8 Personen</option>
+                    <option value="9prs">9 Personen</option>
+                    <option value="10prs">10 Personen</option>
+                </select>
+
+                <label for="tijdslot">Uur van aankomst</label>
+                <select name="tijden" id="tijden">
+                    <option value="">Kies u uur</option>
+                    <option value="16:00">16:00</option>
+                    <option value="16:30">16:30</option>
+                    <option value="17:00">17:00</option>
+                    <option value="17:30">17:30</option>
+                    <option value="18:00">18:00</option>
+                    <option value="18:30">18:30</option>
+                    <option value="19:00">19:00</option>
+                    <option value="19:30">19:30</option>
+                    <option value="20:00">20:00</option>
+                    <option value="20:30">20:30</option>
+                    <option value="21:00">21:00</option>
+                    <option value="21:30">21:30</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="prijs">Kies uw arangement</label>
+                <select name="prijs" id="prijs">
+                    <option value="">maak uw keuze</option>
+                    <option value="prijs1">arangement 1</option>
+                    <option value="prijs2">arangement 2</option>
+                    <option value="prijs3">arangement 3</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="verjaardag">Ben jij jarig? vink mij dan aan.</label>
+                <input type="checkbox" name="verjaardag" id="verjaardag">
+                
+
+                <label for="naamJarige">Naam van de jarige</label>
+                <input type="text" name="naamJarige" id="naamJarige">
+
+                <label for="leeftijdJarige">Hoe oud wordt de jarige?</label>
+                <input type="text" name="leeftijdJarige" id="leeftijdJarige">
+            </div>
+
+            <textarea name="bericht" id="bericht"></textarea>
+
+            <input type="button" name="verstuur" id="verstuur" value="reserveer nu">
+
         </form>
     </div>
 
