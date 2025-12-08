@@ -167,7 +167,7 @@ textarea{
     background-size: cover;
 }
 
-/* css hero sectie */
+/* css homepagina hero sectie */
 
 .hero {
     display: flex;
@@ -272,11 +272,26 @@ textarea{
     transform: scale(1.2);
 }
 
+/* css regestratie hero sectie */
+
+.introTekst {
+    text-align: center;
+    width: 900px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.introTekst>p {
+    line-height: 25px;
+    margin: 40px auto;
+}
+
+
 
 /* reservatie formulier */
 
 .form {
-    width: 700px;
+    width: 650px;
 }
 
 .formFlex {
@@ -292,12 +307,12 @@ textarea{
     border-radius: 15px;
     border: solid 1px #A89574;
     padding-left: 5px;
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 .input>select {
     display: flex;
-    width: 125px;
+    width: 120px;
     height: 30px;
     border: solid 1px #A89574;
     border-radius: 15px;
@@ -314,8 +329,29 @@ textarea{
     border: solid 1px #A89574;
 }
 
+.formJarig {
+    display: flex;
+    align-items: center;
+    width: 630px;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+.jarig {
+    width: 250px;
+}
+
 .hidden {
+    width: 150px;
     display: none;
+}
+
+.hidden>input {
+    width: 120px;
+    height: 30px;
+    border: solid 1px #A89574;
+    border-radius: 15px;
+    text-align: center;
 }
 
 .btn_reservatie {
@@ -326,9 +362,6 @@ textarea{
     border: none;
     box-shadow: 2px 2px 5px;
 }
-
-
-
 
 
 
