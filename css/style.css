@@ -182,9 +182,9 @@ textarea{
 }
 .foto>img{
     margin-bottom: 50px;
-    /* height: 300px;
-    width: 300px; */
-    width: 90%;
+    height: 400px;
+    width: 400px;
+    /* width: 90%; */
     object-fit: cover;
     border-radius: 10px;
 }
