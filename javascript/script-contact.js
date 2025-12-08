@@ -2,6 +2,7 @@
 
     let voornaamTxt;    
     let emailTxt;    
+    let berichtTxt;
     let allescorrectingevuld = true;
 
 
@@ -18,9 +19,9 @@
 
     // email voorwaarden
     function controleerVoorwaardenemail(){
-        let regExp = /^[A-Za-z][\.A-Za-z0-9+_-]+@[\.A-Za-z0-9-]+\.[A-Za-z]{2,20}$/;
-        if (regExp.test(emailTxt) == false){
-            document.getElementById("email_error").innerHTML="dit is niet correct";
+        const regExp = /^[A-Za-z][\.A-Za-z0-9+_-]+@[\.A-Za-z0-9-]+\.[A-Za-z]{2,20}$/;
+        if (!regExp.test(emailTxt)){
+            document.getElementById("email_error").innerHTML="dit is niet correct ";
 
             allescorrectingevuld = false;
         }
@@ -29,11 +30,24 @@
         }
     }
 
+    // textbericht voorwaarden
+    function controleerVoorwaardenbericht(){
+        berichtTxt = document.getElementById("bericht").value;
+
+        if (berichtTxt.length < 10) {
+            document.getElementById("textbericht_error").innerHTML = "vul a.u.b. minimum 10 karakters in";
+            allescorrectingevuld = false;
+        }
+        else {
+            document.getElementById("textbericht_error").innerHTML = "";
+        }
+    }
+
 
 
     function verstuur() {
         voornaamTxt = document.getElementById("voornaam").value;
-        //Via JS vraag je het element uit de webpagina op met de id voornaam. Van dat element vraag je de value op, de inhoud
+
         allescorrectingevuld = true;
 
         if (voornaamTxt.length == 0) {
@@ -41,15 +55,11 @@
             allescorrectingevuld = false;
         }
         else {
-            //aparte functie aanmaken om de voorwaarden te controleren
             controleerVoorwaardenVoornaam()
         }
-        //uiteindelijk controleren of alles correct is
-        //deze if blijft altijd allerlaatst in de verstuur() functie
 
-        if (allescorrectingevuld) {
-            alert("Naam is correct ingevuld");
-        }
+
+        
 
         // email validatie
         emailTxt = document.getElementById("email").value;
@@ -59,10 +69,28 @@
             allescorrectingevuld= false;
         }
         else{
-            controleerVoorwaardenVoornaam()
+            controleerVoorwaardenemail()
         }
 
-    }//einde verstuur()
+        // textbericht
+
+        berichtTxt = document.getElementById("bericht").value;
+
+        if(berichtTxt.length == 0){
+            document.getElementById("textbericht_error").innerHTML ="vul in a.u.b.";
+            allescorrectingevuld = false;
+        }
+        else{
+            controleerVoorwaardenbericht()
+        }
+        
+
+
+        if (allescorrectingevuld) {
+            alert(" is correct ingevuld");
+        }
+
+    }
 
 
    

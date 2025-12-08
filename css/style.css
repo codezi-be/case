@@ -70,8 +70,7 @@ p, label{
 /* footer */
 
 .footer{
-    width: 1300px;
-    margin: auto;
+    margin-top: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -153,6 +152,51 @@ textarea{
 
 .error{
     color: red;
+}
+
+/* onze keuken */
+.arrangement_geheel{
+    margin-bottom: 200px;
+}
+.arrangement_container{
+    margin: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2;
+}
+.arrangement{
+    padding: 25px;
+    height: 300px;
+    width: 300px;
+    background-color: #A89574;
+    text-align: center;
+    border-radius: 10px;
+}
+.arrangement:hover{
+    box-shadow: 2px 2px 10px;
+    
+}
+.arrangement_h1{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.foto>img{
+    margin-bottom: 50px;
+    /* height: 300px;
+    width: 300px; */
+    width: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.alle-foto{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1;
+}
+.onze_keukenh2{
+    text-align: center;
+    padding-bottom: 40px;
 }
 
 /* css voor de paralax */
