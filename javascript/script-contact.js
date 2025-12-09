@@ -8,6 +8,7 @@
     let aantalPersoonTxt;
     let tijdslotTxt;
     let prijsTxt;
+    let verjaardagTxt;
     let naamJarigeTxt;
     let leeftijdJarigeTxt;
     let berichtTxt;
@@ -67,7 +68,7 @@
 
 
     function controleerVoorwaardenDatum() {
-        const regDatum = /\d{2}\-\d{2}\-\d{4}$/;
+        const regDatum = /^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-\d{4}$/;
         if (!regDatum.test(datumTxt)) {
             document.getElementById("datum_error").innerHTML="Geef geldige datum in";
 
@@ -77,6 +78,31 @@
             document.getElementById("datum_error").innerHTML="";
         }
     }
+
+
+    function controleerVoorwaardenNaamJarige() {
+        if (naamJarigeTxt.length < 2) {
+            document.getElementById("naamJarige_error").innerHTML="Minstens 2 karakters";
+
+            allescorrectingevuld = false
+        }
+        else {
+            document.getElementById("naamJarige_error").innerHTML="";
+        }
+    }
+
+    function controleerVoorwaardenLeeftijdJarige() {
+        const regLeeftijdJarige = /^\d{1,3}$/;
+        if (!regLeeftijdJarige.test(leeftijdJarigeTxt)) {
+            document.getElementById("leeftijdJarige_error").innerHTML="Ben je zeker dat je zo oud wordt?"
+
+            allescorrectingevuld = false
+        }
+        else {
+            document.getElementById("leeftijdJarige_error").innerHTML=""
+        }
+    }
+
 
     // textbericht voorwaarden
     function controleerVoorwaardenbericht(){
@@ -92,6 +118,24 @@
     }
 
 
+    function jarigeVeld(){
+        let verjaardag = document.getElementById("verjaardag");
+        let hidden = document.getElementById("jarigeVeld");
+        let hidden1 = document.getElementById("jarigeVeld2");
+    
+
+
+        if (verjaardag.checked == true){
+            hidden.style.display = "block";
+            hidden1.style.display = "block";
+        }
+        else {
+            hidden.style.display = "none";
+            hidden1.style.display = "none";
+        }
+   }
+
+
 
     function verstuur() {
         achternaamTxt = document.getElementById('achternaam').value;
@@ -102,8 +146,9 @@
         aantalPersoonTxt = document.getElementById("aantal").value;
         tijdslotTxt = document.getElementById("tijden").value;
         prijsTxt = document.getElementById("tijden").value;
-        naamJarigeTxt = document.getElementById("naamJarige").value
-        leeftijdJarigeTxt = document.getElementById("leeftijdJarige").value
+        verjaardagTxt = document.getElementById("verjaardag");
+        naamJarigeTxt = document.getElementById("naamJarige").value;
+        leeftijdJarigeTxt = document.getElementById("leeftijdJarige").value;
         berichtTxt = document.getElementById("bericht").value;
 
         allescorrectingevuld = true;
@@ -159,7 +204,7 @@
 
 
         if (aantalPersoonTxt.length == 0){
-            document.getElementById("aantal_error").innerHTML="Vul in a.u.b."
+            document.getElementById("aantal_error").innerHTML="Maak een keuze"
 
             allescorrectingevuld = false
         }
@@ -169,7 +214,7 @@
 
 
         if (tijdslotTxt.length == 0){
-            document.getElementById("tijdslot_error").innerHTML="Vul in a.u.b."
+            document.getElementById("tijdslot_error").innerHTML="Maak een keuze"
 
             allescorrectingevuld = false
         }
@@ -179,7 +224,7 @@
 
 
         if (prijsTxt.length == 0){
-            document.getElementById("prijs_error").innerHTML="Vul in a.u.b."
+            document.getElementById("prijs_error").innerHTML="Maak een keuze"
 
             allescorrectingevuld = false
         }
@@ -188,36 +233,26 @@
         }
 
 
+        if (verjaardagTxt.checked == true){
+             if (naamJarigeTxt.length == 0){
+                document.getElementById("naamJarige_error").innerHTML="Vul in a.u.b."
+
+                allescorrectingevuld = false
+            }
+            else {
+                controleerVoorwaardenNaamJarige()
+            }
 
 
+            if (leeftijdJarigeTxt.length == 0){
+                document.getElementById("leeftijdJarige_error").innerHTML="Vul in a.u.b."
 
-        // dit werkt nog niet kom ik nog op terug
-
-
-        // if (jarigeVeld() = true){
-        //      if (naamJarigeTxt.length == 0){
-        //         document.getElementById("naamJarige_error").innerHTML="Vul in a.u.b."
-
-        //         allescorrectingevuld = false
-        //     }
-        //     else {
-        //         controleerVoorwaardenNaamJarige()
-        //     }
-
-
-        //     if (leeftijdJarigeTxt.length == 0){
-        //         document.getElementById("leeftijdJarige_error").innerHTML="Vul in a.u.b."
-
-        //         allescorrectingevuld = false
-        //     }
-        //     else {
-        //         controleerVoorwaardenLeeftijdJarige()
-        //     }
-        // }
-
-
-
-
+                allescorrectingevuld = false
+            }
+            else {
+                controleerVoorwaardenLeeftijdJarige()
+            }
+        }
 
 
         // textbericht
@@ -238,19 +273,5 @@
     }
 
 
-   function jarigeVeld(){
-    let verjaardag = document.getElementById("verjaardag");
-    let hidden = document.getElementById("jarigeVeld");
-    let hidden1 = document.getElementById("jarigeVeld2");
-    
+  
 
-
-    if (verjaardag.checked == true){
-        hidden.style.display = "block";
-        hidden1.style.display = "block";
-    }
-    else {
-        hidden.style.display = "none";
-        hidden1.style.display = "none";
-    }
-   }
