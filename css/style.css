@@ -42,6 +42,7 @@ p, label{
     background-color: whitesmoke;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 .header{
     margin: auto;
@@ -165,8 +166,9 @@ textarea{
     gap: 2;
 }
 .arrangement{
+    position: relative;
     padding: 25px;
-    height: 300px;
+    height: auto;
     width: 300px;
     background-color: #A89574;
     text-align: center;
@@ -178,7 +180,7 @@ textarea{
 }
 .arrangement_h1{
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 120px;
 }
 .foto>img{
     margin-bottom: 50px;
@@ -198,6 +200,56 @@ textarea{
     text-align: center;
     padding-bottom: 40px;
 }
+.foto{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.afbeelding-titel{
+    padding: 10px;
+    margin-top: -125px;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    left: 16px;
+    /* vast aan de onderkant van de foto */
+    width: 88%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    /* semi-transparante donkere balk */
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+}
+
+.promobadge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0px 0px 10px #333;
+    text-align: center;
+    font-family: "Fugaz One", sans-serif;
+    font-size: 17px;
+    position:absolute;
+    top: -35px;
+    left: 280px;
+    z-index: 800;
+    transform: rotate(20deg);
+}
+.arrangement2_border{
+    padding: 35px;
+    /* meer ruimte binnenin */
+    width: 330px;
+    /* iets breder dan de rest */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+    margin-top: -40px;
+    /* beetje omhoog laten uitsteken */
+}
+
 
 /* css voor de paralax */
 
