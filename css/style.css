@@ -442,17 +442,12 @@ textarea{
     display: none;
 }
 
-/* #jarigeVeld {
-    display: none;
-} */
-
-
 .boxJarige>input {
-    width: 120px;
+    width: 115px;
     height: 30px;
     border: solid 1px #A89574;
     border-radius: 15px;
-    text-align: center;
+    padding-left: 5px;
 }
 
 .btn_reservatie {
