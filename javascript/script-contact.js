@@ -1,8 +1,16 @@
 "use strict";
 
+    let achternaamTxt;
     let voornaamTxt;    
+    let telefoonTxt;
     let emailTxt;    
+    let datumTxt;
+    let aantalPersoonTxt;
+    let tijdslotTxt;
+    let prijsTxt;
     let berichtTxt;
+
+
     let allescorrectingevuld = true;
 
 
@@ -46,9 +54,29 @@
 
 
     function verstuur() {
+        achternaamTxt = document.getElementById('achternaam').value;
         voornaamTxt = document.getElementById("voornaam").value;
+        telefoonTxt = document.getElementById("telefoon").value;
+        emailTxt = document.getElementById("email").value;
+        datumTxt = document.getElementById("datum").value;
+        aantalPersoonTxt = document.getElementById("aantal").value;
+        tijdslotTxt = document.getElementById("tijden").value;
+        prijsTxt =document.getElementById("tijden").value;
+        berichtTxt = document.getElementById("bericht").value;
 
         allescorrectingevuld = true;
+
+
+
+        if (achternaamTxt.length == 0){
+            document.getElementById("achternaam_error").innerHTML="Vul in a.u.b."
+
+            allescorrectingevuld = false
+        }
+        else {
+            controleerVoorwaardenAchternaam()
+        }
+
 
         if (voornaamTxt.length == 0) {
             document.getElementById("voornaam_error").innerHTML = "Vul in a.u.b.";
@@ -59,25 +87,47 @@
         }
 
 
-        
+        if (telefoonTxt.length == 0){
+            document.getElementById("telefoon_error").innerHTML="Vul in a.u.b."
+
+            allescorrectingevuld = false
+        }
+        else {
+            controleerVoorwaardenTelefoon()
+        }
 
         // email validatie
-        emailTxt = document.getElementById("email").value;
-
         if(emailTxt.length == 0){
-            document.getElementById("email_error").innerHTML="vul in a.u.b.";
+            document.getElementById("email_error").innerHTML="Vul in a.u.b.";
             allescorrectingevuld= false;
         }
         else{
             controleerVoorwaardenemail()
         }
 
+
+        if (datumTxt.length == 0){
+            document.getElementById("datum_error").innerHTML="Vul in a.u.b."
+
+            allescorrectingevuld = false
+        }
+        else {
+            controleerVoorwaardenDatum()
+        }
+
+
+        if (aantalPersoonTxt.length == 0){
+            document.getElementById("aantal_error").innerHTML="Vul in a.u.b."
+
+            allescorrectingevuld = false
+        }
+        else {
+            controleerVoorwaardenAantal()
+        }
+
         // textbericht
-
-        berichtTxt = document.getElementById("bericht").value;
-
         if(berichtTxt.length == 0){
-            document.getElementById("textbericht_error").innerHTML ="vul in a.u.b.";
+            document.getElementById("textbericht_error").innerHTML ="Vul in a.u.b.";
             allescorrectingevuld = false;
         }
         else{
@@ -93,4 +143,19 @@
     }
 
 
-   
+   function jarigeVeld(){
+    let verjaardag = document.getElementById("verjaardag");
+    let hidden = document.getElementById("jarigeVeld");
+    let hidden1 = document.getElementById("jarigeVeld2");
+    
+
+
+    if (verjaardag.checked == true){
+        hidden.style.display = "block";
+        hidden1.style.display = "block";
+    }
+    else {
+        hidden.style.display = "none";
+        hidden1.style.display = "none";
+    }
+   }
