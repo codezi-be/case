@@ -385,12 +385,17 @@ textarea{
     width: 250px;
 }
 
-.hidden {
+.boxJarige {
     width: 150px;
     display: none;
 }
 
-.hidden>input {
+/* #jarigeVeld {
+    display: none;
+} */
+
+
+.boxJarige>input {
     width: 120px;
     height: 30px;
     border: solid 1px #A89574;
