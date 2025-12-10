@@ -21,7 +21,7 @@
     function controleerVoorwaardenemail(){
         const regExp = /^[A-Za-z][\.A-Za-z0-9+_-]+@[\.A-Za-z0-9-]+\.[A-Za-z]{2,20}$/;
         if (!regExp.test(emailTxt)){
-            document.getElementById("email_error").innerHTML="dit is niet correct ";
+            document.getElementById("email_error").innerHTML="dit is geen geldig email-adres ";
 
             allescorrectingevuld = false;
         }
@@ -87,7 +87,21 @@
 
 
         if (allescorrectingevuld) {
-            alert(" is correct ingevuld");
+            let link = "mailto:" + encodeURIComponent("info@cvo.be")
+                + "?cc=" + encodeURIComponent("kopie@cvo.be")
+                + "&subject=" + encodeURIComponent("Formulier validatie")
+                + "&body="
+                + "voornaam:"
+                + encodeURIComponent(voornaamTxt)
+                + encodeURIComponent("\r\n\n")
+                + "email:"
+                + encodeURIComponent(emailTxt)
+                + encodeURIComponent("\r\n\n")
+                + "bericht:"
+                + encodeURIComponent(berichtTxt)
+                + encodeURIComponent("\r\n\n")
+                
+            window.location.href = link;
         }
 
     }
