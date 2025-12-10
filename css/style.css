@@ -457,6 +457,15 @@ textarea{
     border-radius: 15px;
     border: none;
     box-shadow: 2px 2px 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.btn_reservatie:hover {
+    cursor: pointer;
+    color: #770000;
+    box-shadow: #770000 2px 2px 5px;
+    
 }
 
 
