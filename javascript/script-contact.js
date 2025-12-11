@@ -337,7 +337,6 @@
 
 
          if (allescorrectingevuld) {
-            document.write("Uw reservatie is bijna afgerond");
             let reserveer = "mailto:" +encodeURIComponent("codezi.be@gmail.com")
             + "?subject=" + encodeURIComponent("nieuwe reservatie")
             + "&body="
