@@ -115,6 +115,7 @@ p, label{
     display: flex;
     justify-content: space-between;
     padding-bottom: 150px;
+    font-size: 25px;
 }
 .opmerking{
     text-align: center;
@@ -127,6 +128,7 @@ iframe{
 }
 .div-links input{
     display: flex;
+    margin-top: 5px;
 }
 .text-met-map{
     margin-bottom: 20px;
@@ -135,10 +137,11 @@ iframe{
     margin-top: 20px;
 }
 textarea{
+    margin-top: 5px;
     height: 250px;
     width: 400px;
     border-radius: 20px;
-    padding-left: 5px;
+    padding-left: 15px;
     border: #A89574 solid 1px;
 }
 
